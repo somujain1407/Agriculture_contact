@@ -1,0 +1,494 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Container */
+.market {
+    border: 2px solid green;
+    height: fit-content;
+}
+
+/* Section 1 */
+.market-1 {
+    border: 2px solid purple;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.under-1 {
+    border: 2px solid red;
+    width: 20%;
+    height: fit-content;
+}
+
+.under-2 {
+    border: 2px solid purple;
+    width: 70%;
+    height: fit-content;
+}
+
+.under-1 h1 {
+    border: 2px solid black;
+    font-size: 75px;
+    color: rgb(68, 63, 63);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.under-1 span {
+    color: green;
+}
+
+.under-2 h2 {
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.under-2 span {
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section 2 */
+.part-2 {
+    margin-top: 60px;
+    border: 2px solid purple;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.under-3 {
+    border: 2px solid red;
+    width: 40%;
+    height: fit-content;
+}
+
+.under-3 h1 {
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+}
+
+.under-3 span {
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.under-3 li {
+    font-size: 19px;
+    line-height: 1.7;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.under-4 {
+    border: 2px solid purple;
+    width: 50%;
+    height: fit-content;
+}
+
+.under-4 img {
+    border: 2px solid black;
+    width: 100%;
+}
+
+/* ---------------- MEDIA QUERIES ---------------- */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+
+    .under-1,
+    .under-2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .under-3,
+    .under-4 {
+        width: 100%;
+    }
+
+    .under-1 h1 {
+        font-size: 55px;
+    }
+
+    .under-2 h2 {
+        font-size: 35px;
+    }
+
+    .under-3 h1 {
+        font-size: 35px;
+    }
+
+    .under-3 span,
+    .under-3 li {
+        font-size: 18px;
+    }
+}
+
+/* Mobile (below 768px) */
+@media (max-width: 768px) {
+
+    .market-1,
+    .part-2 {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .under-1,
+    .under-2,
+    .under-3,
+    .under-4 {
+        width: 90%;
+    }
+
+    .under-1 h1 {
+        font-size: 40px;
+    }
+
+    .under-2 h2 {
+        font-size: 28px;
+    }
+
+    .under-3 h1 {
+        font-size: 28px;
+    }
+
+    .under-3 span,
+    .under-3 li {
+        font-size: 16px;
+    }
+}
+
+/* <----------PART-3----------> */
+
+
+.part-3 {
+    background-color: rgba(130, 210, 225, 0.182);
+    font-family: Arial, sans-serif;
+    /* background-color: #eaf5f2; */
+    color: #333;
+    padding: 20px;
+}
+
+.market-help {
+    /* border: 2px solid red; */
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+}
+
+.market-help h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.help-grid {
+    /* border: 2px solid purple; */
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.help-item {
+    /* border: 2px solid green; */
+    background-color: white;
+    width: 48%;
+    /* border-radius: 8px; */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.help-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#market4 {
+    /* border: 2px solid green; */
+    height: 360px;
+}
+
+#market5 {
+    /* border: 2px solid green; */
+    height: 370px;
+}
+#market8{
+    height: 220px;
+}
+#market9{
+    height: 220px;
+}
+
+.text-content {
+    padding: 20px;
+}
+
+.text-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* MEDIA QUERY: For tablets and below */
+@media (max-width: 768px) {
+    .help-grid {
+        flex-direction: column;
+    }
+
+    .help-item {
+        width: 100%;
+    }
+
+    .market-help h2 {
+        font-size: 28px;
+    }
+
+    .text-content h3 {
+        font-size: 18px;
+    }
+
+    .text-content p {
+        font-size: 15px;
+    }
+}
+
+/* <----------PART-4-----------> */
+.part-4 {
+    margin: 0;
+    background-color: rgba(130, 210, 225, 0.182);
+
+    font-family: Arial, sans-serif;
+    /* background: #f1f8f6; */
+    color: #222;
+}
+
+.how-it-works {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.how-it-works h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.how-it-works p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.steps-container {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.step {
+    /* border: 2px solid green; */
+    flex: 1 1 250px;
+    max-width: 350px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.step img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.step h3 {
+    color: #2e8b57;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.step p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* <----------PART-5----------> */
+.part-5{
+    border: 2px solid purple;
+    height: fit-content;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #003b2e;
+  color: white;
+}
+
+.key-benefits {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.key-benefits h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.benefits-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.benefit-box {
+  flex: 1 1 220px;
+  max-width: 250px;
+  text-align: left;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.benefit-box img {
+  width: 50px;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.benefit-box h3 {
+  color: #00c389;
+  margin-bottom: 10px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.benefit-box p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #e0f7f1;
+}
+
+/* Hover Effects */
+.benefit-box:hover {
+  background-color: #004d3b;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.benefit-box:hover img {
+  transform: scale(1.1);
+}
+
+.benefit-box:hover h3 {
+  color: #1fffb3;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .benefits-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefit-box {
+    text-align: center;
+  }
+}
+/* <----------PART-6---------> */
+.why-market-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  color: #333;
+}
+
+.why-market-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.why-left h2 {
+  font-size: 48px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #222;
+}
+
+.why-right {
+  flex: 1;
+}
+
+.why-right p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.highlight-text {
+  font-weight: 700;
+  font-size: 20px;
+  color: #2d8b75;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .why-left h2 {
+    font-size: 36px;
+  }
+
+  .highlight-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-market-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why-left h2 {
+    font-size: 32px;
+  }
+
+  .why-right p {
+    font-size: 16px;
+  }
+}
